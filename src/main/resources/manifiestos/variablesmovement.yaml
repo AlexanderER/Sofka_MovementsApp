@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: movement-config
+data:
+  appPort: "8085"
+  mongoUri: "mongodb://mongo-service:27017"
+  mongoDatabase: "dbMovements"
+  rabbitUri: "amqp://rabbit-service:5672"
